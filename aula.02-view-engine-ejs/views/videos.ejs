@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Seja bem vindo!</h1>
+    <hr>
+    
+    <% if (playlist && video == undefined) { %>
+        <p>Você está na playlist de <%=playlist%></p>
+    <% } %>
+    
+    <% if (playlist && video) { %>
+        <p>Você está na playlist de <%=playlist%> e rodando o video <%=video%></p>
+    <% } %>
+        
+    <% if (playlist == undefined && video == undefined) { %>
+        <p>Sem parâmetros</p>
+    <% } %>
+
+</body>
+</html>
